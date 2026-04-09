@@ -46,17 +46,38 @@
 				</fieldset>
 
 				<fieldset>
+
 					<legend>Perfil</legend>
-					<p>Gênero:</p>
-					<input type="radio" name="userGender" value="Feminino" id="fem">
-					<label for="fem">Feminino</label>
+					<div class="genero">
+						<p>Gênero:</p>
 
-					<input type="radio" name="userGender" value="Masculino" id="masc">
-					<label for="masc">Masculino</label>
+						<label class="radio-item">
+							<input type="radio" name="userGender" value="Feminino">
+							Feminino
+						</label>
 
-					<input type="radio" name="userGender" value="notInformed" id="notInformed">
-					<label for="notInformed">Prefira não informar</label>
-					<br>
+						<label class="radio-item">
+							<input type="radio" name="userGender" value="Masculino">
+							Masculino
+						</label>
+
+						<label class="radio-item">
+							<input type="radio" name="userGender" value="notInformed">
+							Prefiro não informar
+						</label>
+					</div>
+					<!-- <div class="genero">
+						<p>Gênero:</p>
+						<input type="radio" name="userGender" value="Feminino" id="fem">
+						<label for="fem">Feminino</label>
+
+						<input type="radio" name="userGender" value="Masculino" id="masc">
+						<label for="masc">Masculino</label>
+
+						<input type="radio" name="userGender" value="notInformed" id="notInformed">
+						<label for="notInformed">Prefira não informar</label>
+						<br>
+					</div> -->
 
 					<label for="userMaritalStatus">Estado Civil:</label>
 					<select name="maritalStatus" id="userMaritalStatus">
