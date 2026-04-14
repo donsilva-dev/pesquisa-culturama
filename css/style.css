@@ -6,7 +6,7 @@
 
 body {
 	background-color: #f9f9f9;
-	font-family: "Work Sans" , sans-serif;
+	font-family: "Work Sans", sans-serif;
 }
 
 main {
@@ -19,9 +19,11 @@ header {
 	text-align: center;
 	margin-bottom: 20px;
 }
+
 img {
 	width: 100px;
 }
+
 h1 {
 	font-family: "Fjalla One", sans-serif;
 }
@@ -46,15 +48,30 @@ legend {
 	font-size: 18px;
 	padding: 0 5px;
 }
+
 label {
 	display: inline-block;
 	margin-bottom: 5px;
 }
+
+input[type="tel"],
+input[type="file"] {
+	margin-bottom: 0;
+}
+
+small {
+	display: inline-block;
+	margin-bottom: 20px;
+}
+
 p {
 	margin-bottom: 15px;
 	font-weight: bold;
 }
-input, select, textarea {
+
+input,
+select,
+textarea {
 	width: 100%;
 	padding: 10px;
 	margin-bottom: 20px;
@@ -76,11 +93,15 @@ input[type="color"] {
 	padding: 0 5px;
 }
 
-input:invalid, select:invalid, textarea:invalid{
+input:invalid,
+select:invalid,
+textarea:invalid {
 	border-color: red;
 }
 
-input:valid,select:valid, textarea:valid{
+input:valid,
+select:valid,
+textarea:valid {
 	border-color: green;
 }
 
@@ -95,44 +116,39 @@ button {
 	cursor: pointer;
 }
 
-button[type="submit"]:hover{
+button[type="submit"]:hover {
 	background-color: rgb(2, 170, 2);
 
 }
 
 .bmt-reset {
-background-color: orangered;
-color: #ffffff;
+	color: #333333;
+	background-color: #ffffff;
 }
+
 .bmt-reset:hover {
 	background-color: rgb(252, 105, 51);
 }
 
 .genero {
-    /* display: flex; */
-    flex-wrap: wrap;
-    align-items: center;
+	flex-wrap: wrap;
+	align-items: center;
 }
 
-/* .genero p {
-    width: 100%;
-} */
-
 .radio-item {
-    /* display: flex; */
-    align-items: center;
-    gap: 6px;
+	align-items: center;
+	gap: 6px;
 }
 
 @media (max-width: 480px) {
-    .genero {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+	.genero {
+		flex-direction: column;
+		align-items: flex-start;
+	}
 }
 
 input,
 select,
 textarea {
-    font-size: 16px;
+	font-size: 16px;
 }
