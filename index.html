@@ -38,7 +38,8 @@
 					<input type="email" name="userEmail" id="email" required>
 					<br>
 					<label for="phoneNumber">Telefone</label>
-					<input type="tel" name="userPhoneNumber" id="phoneNumber" pattern="[0-9]{11}" placeholder="DDD + números">
+					<input id="phoneNumber" type="tel" name="userPhoneNumber" pattern="[0-9]{11}" placeholder="DDD + números" aria-describedby="phonehelp">
+					<small id="phonehelp">Prencha com 11 digitos no formato: DDD + número sem espaços e hífen.</small>
 					<br>
 					<label for="image">Upload de fotos</label>
 					<input type="file" id="image" accept="image/*" name="userImage">
@@ -46,8 +47,8 @@
 				</fieldset>
 
 				<fieldset>
-
 					<legend>Perfil</legend>
+
 					<div class="genero">
 						<p>Gênero:</p>
 
@@ -66,19 +67,6 @@
 							Prefiro não informar
 						</label>
 					</div>
-					<!-- <div class="genero">
-						<p>Gênero:</p>
-						<input type="radio" name="userGender" value="Feminino" id="fem">
-						<label for="fem">Feminino</label>
-
-						<input type="radio" name="userGender" value="Masculino" id="masc">
-						<label for="masc">Masculino</label>
-
-						<input type="radio" name="userGender" value="notInformed" id="notInformed">
-						<label for="notInformed">Prefira não informar</label>
-						<br>
-					</div> -->
-
 					<label for="userMaritalStatus">Estado Civil:</label>
 					<select name="maritalStatus" id="userMaritalStatus">
 						<option value="notInformed">Selecione...</option>
